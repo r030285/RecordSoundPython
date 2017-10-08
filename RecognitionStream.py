@@ -6,7 +6,7 @@ config = speech.types.RecognitionConfig(
     language_code='pt-BR',
     sample_rate_hertz=16000,
 )
-with io.open('output.wav', 'rb') as stream:
+with io.open('output_1507404799.wav', 'rb') as stream:
     requests = [speech.types.StreamingRecognizeRequest(
         audio_content=stream.read(),
     )]
